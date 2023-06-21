@@ -1,16 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../views/Home/HomePage.jsx";
 import  Carta  from "../views/Carta/Carta.jsx";
-
-
+import PedidosPage from "../views/Pedidos/PedidosPage.jsx";
 
 
 function Autho() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes> 
         <Route path="/Home" element={<HomePage/>}></Route>
         <Route path="/Carta" element={<Carta/>}></Route>
+        <Route path="/Pedidos" element={<PedidosPage/>}></Route>
         <Route
           path="/*"
           element={
